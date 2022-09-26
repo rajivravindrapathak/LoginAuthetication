@@ -1,9 +1,11 @@
 import React from 'react'
+import "./Home.css"
 
-function Home() {
+const Home = () => {
   return (
-    <div>
-      
+    <div className='home'>
+      <h1>home</h1>
+      <div className='btn'>logout</div>
     </div>
   )
 }
