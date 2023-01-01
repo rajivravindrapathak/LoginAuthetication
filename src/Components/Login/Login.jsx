@@ -32,7 +32,7 @@ const Login = () => {
       <input type="password" name='password' value={user.password} onChange={handleChange}  placeholder='password'/>
       <div className='btn' onClick={login}>Login</div>
       <div>or</div>
-      <div className='btn'>Register</div>
+      <div className='btn'><Link id='sinup' to="signup">Register</Link></div> 
     </div>
   )
 }

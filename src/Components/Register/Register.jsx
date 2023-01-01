@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Register.css"
 import axios from "axios"
+import { Link } from 'react-router-dom'
 
 const Register = () => {
 
@@ -10,7 +11,7 @@ const Register = () => {
     password: "",
     reEnterPassword: ""
   })
-
+ 
   const handleChange = e => {
     const {name, value} = e.target
     setUser({
@@ -39,7 +40,7 @@ const Register = () => {
       <input type="password" name='reEnterPassword' value={user.reEnterPassword} placeholder='reEnter password' onChange={handleChange} />
       <div className='btn' onClick={register}>Register</div>
       <div>or</div>
-      <div className='btn'>Login</div>
+      <div className='btn'> <Link id='sinup' to="signup">Login</Link></div>
    </div>
   )
 }
